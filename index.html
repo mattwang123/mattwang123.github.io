@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hexuan (Matt) Wang</title>
+<meta name="description" content="Hexuan (Matt) Wang works on faithful, verifiable, and reliably grounded language models at Johns Hopkins University. Applying to PhD programs for Fall 2027." />
+<meta name="author" content="Hexuan (Matt) Wang" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hexuan (Matt) Wang" />
+<meta property="og:description" content="Faithful, verifiable, and reliably grounded language models. Undergraduate researcher at Johns Hopkins University." />
+<meta property="og:url" content="https://mattwang123.github.io/" />
+<meta property="og:image" content="https://mattwang123.github.io/assets/profile.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Hexuan (Matt) Wang" />
+<meta name="twitter:description" content="Faithful, verifiable, and reliably grounded language models. Undergraduate researcher at Johns Hopkins University." />
+<meta name="twitter:image" content="https://mattwang123.github.io/assets/profile.jpg" />
+<link rel="canonical" href="https://mattwang123.github.io/" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Hexuan Wang","alternateName":"Matt Wang",
+ "email":"mailto:hwang302@jh.edu","jobTitle":"Undergraduate Researcher",
+ "affiliation":{"@type":"CollegeOrUniversity","name":"Johns Hopkins University"},
+ "sameAs":["https://scholar.google.com/citations?user=jeIDvaoAAAAJ","https://github.com/mattwang123","https://x.com/HexuanMattWang"]}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a4a7a'/%3E%3Ctext x='50' y='67' font-family='Helvetica,Arial,sans-serif' font-size='42' font-weight='600' fill='%23ffffff' text-anchor='middle'%3EHW%3C/text%3E%3C/svg%3E" />
+<script>
+(function(){try{var s=localStorage.getItem('theme');
+var t=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --bg-soft:#f7f9fb; --ink:#16181d; --ink-soft:#5b6472;
+  --line:#e6e9ee; --accent:#0f62c4; --accent-soft:#eaf2fd;
+  --sans:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --wrap:65rem; --label:11.8rem; --pad:clamp(1.4rem,5vw,3.1rem); --navh:57px;
+}
+:root[data-theme="dark"]{
+  --bg:#0d1117; --bg-soft:#151b23; --ink:#e6edf3; --ink-soft:#9aa6b4;
+  --line:#242c37; --accent:#7cb3e8; --accent-soft:#152534;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1117; --bg-soft:#151b23; --ink:#e6edf3; --ink-soft:#9aa6b4;
+    --line:#242c37; --accent:#7cb3e8; --accent-soft:#152534;
+  }
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 1.5rem);
+  scroll-snap-type:y proximity}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.66;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  transition:background .25s ease,color .25s ease}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--accent);color:#fff;padding:.6rem 1rem}
+.skip:focus{left:0}
+
+/* ---------- TOP BAR ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:var(--bg);background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid var(--line)}
+.bar{max-width:var(--wrap);margin:0 auto;height:var(--navh);padding:0 var(--pad);
+  display:flex;align-items:center;gap:1rem}
+.brand{font-weight:600;font-size:.99rem;color:var(--ink);letter-spacing:-.01em}
+.brand:hover{text-decoration:none}
+.topnav{margin-left:auto;display:flex;gap:.15rem;flex-wrap:wrap}
+.topnav a{font-family:var(--mono);font-size:.745rem;color:var(--ink-soft);
+  padding:.36rem .62rem;border-radius:6px;transition:color .15s,background .15s}
+.topnav a:hover{color:var(--ink);background:var(--bg-soft);text-decoration:none}
+.topnav a.current{color:var(--accent);background:var(--accent-soft)}
+.theme-btn{margin-left:.4rem;width:32px;height:32px;flex:none;border:1px solid var(--line);
+  border-radius:8px;background:transparent;color:var(--ink-soft);cursor:pointer;
+  display:grid;place-items:center;transition:color .15s,border-color .15s}
+.theme-btn:hover{color:var(--accent);border-color:var(--accent)}
+.theme-btn svg{width:15px;height:15px;display:block}
+.to-top{position:fixed;right:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);z-index:60;
+  width:42px;height:42px;border:1px solid var(--line);border-radius:50%;
+  background:var(--bg);color:var(--ink-soft);cursor:pointer;display:grid;place-items:center;
+  box-shadow:0 2px 10px rgba(16,24,40,.09);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .3s ease,transform .3s ease,visibility .3s,color .15s,border-color .15s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{color:var(--accent);border-color:var(--accent)}
+.to-top svg{width:17px;height:17px;display:block}
+:root[data-theme="dark"] .icon-sun{display:none}
+:root:not([data-theme="dark"]) .icon-moon{display:none}
+
+/* ---------- PAGES (snap) ---------- */
+main{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.page{padding:5rem 0;scroll-snap-align:start;border-top:1px solid var(--line)}
+/* the landing page settles centered with breathing room */
+#home{min-height:calc(100vh - var(--navh));
+  display:flex;flex-direction:column;justify-content:center;padding:2.6rem 0}
+.page:first-of-type{border-top:0}
+.reveal{opacity:0;transform:translateY(18px);
+  transition:opacity 1.05s cubic-bezier(.16,1,.3,1),transform 1.05s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:var(--label) 1fr;gap:3rem}
+.label h2{font-size:1.15rem;font-weight:600;letter-spacing:-.005em}
+.label .kicker{font-family:var(--mono);font-size:.68rem;color:var(--ink-soft);margin-top:.45rem;line-height:1.5}
+.body{min-width:0}
+.hl{color:var(--accent);font-weight:600}
+
+/* ---------- HERO ---------- */
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:3.2rem;align-items:start;margin-bottom:4rem}
+h1{font-size:clamp(2.15rem,4.8vw,3rem);font-weight:600;line-height:1.05;letter-spacing:-.026em;margin-bottom:1.05rem}
+h1 .nick{color:var(--ink-soft);font-weight:400}
+.bio{color:var(--ink-soft);max-width:42rem;margin-bottom:1.6rem;text-wrap:pretty}
+@media (min-width:1180px){.bio .ln{display:block}}
+.email-box{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.15rem;
+  font-family:var(--mono);font-size:.9rem;color:var(--ink);
+  border:1px solid color-mix(in srgb,var(--accent) 26%,var(--line));
+  background:var(--accent-soft);border-radius:10px;padding:.62rem 1rem;
+  box-shadow:0 1px 2px rgba(16,24,40,.05);
+  transition:border-color .15s,box-shadow .15s,transform .15s}
+.email-box:hover{border-color:var(--accent);box-shadow:0 3px 10px rgba(16,24,40,.09);
+  transform:translateY(-1px);text-decoration:none;color:var(--accent)}
+.email-box svg{width:16px;height:16px;flex:none;color:var(--accent)}
+.links{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:1.6rem}
+.links a,.links .item{display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.83rem;color:var(--ink-soft);
+  border:1px solid var(--line);border-radius:9px;padding:.5rem .95rem;
+  transition:color .15s,border-color .15s,background .15s}
+.links a:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-soft);text-decoration:none}
+.links .item{opacity:.62}
+.links svg{width:16px;height:16px;display:block;flex:none}
+.status{font-family:var(--mono);font-size:.87rem;color:var(--ink);
+  border-left:2px solid var(--accent);padding-left:.8rem;line-height:1.5}
+.portrait-wrap{width:214px;aspect-ratio:828/1160;border-radius:12px;overflow:hidden;flex:none;
+  border:1px solid var(--line);background:var(--bg-soft);display:grid;place-items:center}
+.portrait-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait-wrap .mono-fallback{font-family:var(--mono);font-size:2.6rem;font-weight:500;color:var(--accent);letter-spacing:.04em}
+
+/* ---------- BLOCKS ---------- */
+.news{list-style:none;display:grid;gap:.85rem;max-height:19.5rem;overflow-y:auto;overscroll-behavior:contain;
+  padding-right:.8rem;scrollbar-width:thin;scrollbar-color:var(--line) transparent;
+  }
+.news.is-scrollable{
+  -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - .8rem),transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 calc(100% - .8rem),transparent 100%)}
+.news::-webkit-scrollbar{width:5px}
+.news::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.news::-webkit-scrollbar-track{background:transparent}
+.news li{display:grid;grid-template-columns:6.6rem 1fr;gap:1rem;align-items:baseline}
+.news .date{font-family:var(--mono);font-size:.73rem;color:var(--ink-soft);white-space:nowrap}
+.news .what{font-size:.99rem}
+
+.pubs{list-style:none;display:grid;gap:0}
+.pub + .pub{border-top:1px solid var(--line);margin-top:2.2rem;padding-top:2.2rem}
+.pub-meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.5rem}
+.tag{font-family:var(--mono);font-size:.665rem;letter-spacing:.03em;padding:.16rem .52rem;
+  border:1px solid var(--line);border-radius:999px;color:var(--ink-soft)}
+.tag.venue{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 32%,transparent);background:var(--accent-soft)}
+.pub-title{font-size:1.07rem;font-weight:600;line-height:1.38;margin-bottom:.32rem}
+.pub-title a{color:var(--ink)}
+.pub-title a:hover{color:var(--accent)}
+.pub-authors{font-size:.9rem;color:var(--ink-soft);margin-bottom:.5rem}
+.pub-authors strong{color:var(--ink);font-weight:600}
+.pub-tldr{font-size:.93rem;color:var(--ink-soft);line-height:1.55;max-width:40rem}
+.pub-tldr .lbl{font-family:var(--mono);font-size:.62rem;color:var(--accent);letter-spacing:.04em;
+  border:1px solid color-mix(in srgb,var(--accent) 32%,transparent);background:var(--accent-soft);
+  border-radius:5px;padding:.1rem .38rem;margin-right:.5rem;white-space:nowrap}
+.pub-links{margin-top:.62rem;display:flex;gap:.5rem}
+.pub-links a{font-family:var(--mono);font-size:.72rem;color:var(--accent);
+  border:1px solid var(--line);border-radius:6px;padding:.18rem .62rem;transition:border-color .15s,background .15s}
+.pub-links a:hover{border-color:var(--accent);background:var(--accent-soft);text-decoration:none}
+
+.teach{list-style:none;display:grid;gap:0}
+.teach li{display:grid;grid-template-columns:1fr auto;gap:.6rem 1.4rem;align-items:baseline;
+  padding:.78rem 0;border-bottom:1px solid var(--line)}
+.teach li:last-child{border-bottom:0}
+.tc-name{font-size:1rem}
+.amt{font-family:var(--mono);font-size:.78rem;color:var(--accent);margin-left:.15rem}
+.tc-num{font-family:var(--mono);font-size:.7rem;color:var(--ink-soft);display:block;margin-top:.12rem}
+.tc-terms{font-family:var(--mono);font-size:.71rem;color:var(--ink-soft);text-align:right;white-space:nowrap}
+
+.fun{max-width:38rem;color:var(--ink-soft)}
+.beyond{list-style:none;display:grid;gap:1.15rem;max-width:40rem}
+.beyond > li{position:relative;padding-left:1.15rem;color:var(--ink-soft);line-height:1.68}
+.beyond > li::before{content:"";position:absolute;left:0;top:.66em;width:5px;height:5px;
+  border-radius:50%;background:var(--accent);opacity:.6}
+.b-key{color:var(--ink);font-weight:600;margin-right:.3rem}
+.beyond-sub{list-style:none;display:grid;gap:.5rem;margin-top:.6rem}
+.beyond-sub li{position:relative;padding-left:1rem;font-size:.96rem;line-height:1.62}
+.beyond-sub li::before{content:"–";position:absolute;left:0;top:0;color:var(--ink-soft);opacity:.7}
+.beyond-sub li::marker{content:none}
+.beyond strong{color:var(--ink);font-weight:600}
+.fun strong{color:var(--ink);font-weight:600}
+footer{margin-top:4rem;padding-top:2.2rem;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:.7rem;color:var(--ink-soft)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;scroll-snap-type:none}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+@media (max-width:820px){
+  html{scroll-snap-type:none}
+  #home{min-height:0;display:block;padding:0}
+  .page{padding:3rem 0}
+  .grid{grid-template-columns:1fr;gap:1.1rem}
+  .hero-grid{grid-template-columns:1fr;gap:1.6rem}
+  .portrait-wrap{order:-1;width:140px}
+  footer{margin-top:2rem}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .news li{grid-template-columns:1fr;gap:.1rem}
+  .teach li{grid-template-columns:1fr}
+  .tc-terms{text-align:left}
+  .topnav a{padding:.34rem .44rem;font-size:.7rem}
+  .links a{padding:.45rem .8rem;font-size:.8rem}
+}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="bar">
+    <a class="brand" href="#home">Hexuan&nbsp;(Matt)&nbsp;Wang</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#home">Research</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#beyond">Beyond</a>
+    </nav>
+    <button class="theme-btn" id="theme" type="button" aria-label="Toggle color theme" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.4A8 8 0 0 1 9.6 4 7 7 0 1 0 20 14.4Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE 1: intro + research ============ -->
+  <section class="page" id="home">
+    <div class="reveal">
+      <div class="hero-grid">
+        <div>
+          <h1>Hexuan <span class="nick">(Matt)</span> Wang</h1>
+          <p class="bio"><span class="ln">I'm a senior undergraduate at <strong>Johns Hopkins University</strong></span>
+            <span class="ln">studying Computer Science and Applied Mathematics &amp; Statistics,</span>
+            <span class="ln">fortunate to be advised by <a href="https://danielkhashabi.com/">Daniel Khashabi</a>,
+            <a href="https://www.cs.jhu.edu/~phi/">Philipp Koehn</a>, and
+            <a href="https://j-min.io/">Jaemin Cho</a>.</span></p>
+
+          <a class="email-box" href="mailto:hwang302@jh.edu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 5.6L21 7"/></svg>
+            hwang302@jh.edu</a>
+
+          <nav class="links" aria-label="Profiles">
+            <a href="https://scholar.google.com/citations?user=jeIDvaoAAAAJ">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 1.8 8.4 12 13.6l10.2-5.2z"/><path d="M5.4 10.6v4.6c0 1.7 2.95 3 6.6 3s6.6-1.3 6.6-3v-4.6"/></svg>
+              Google Scholar</a>
+            <a href="https://github.com/mattwang123">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+              GitHub</a>
+            <a href="https://x.com/HexuanMattWang">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter</a>
+            <span class="item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2.5H6.5A1.5 1.5 0 0 0 5 4v16a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 20V7.5z"/><path d="M14 2.5V7.5H19M8.5 12.5h7M8.5 16.5h5"/></svg>
+              CV</span>
+          </nav>
+
+          <p class="status">Applying to PhD programs for Fall 2027</p>
+        </div>
+
+        <div class="portrait-wrap">
+          <img src="assets/profile.jpg" alt="Hexuan (Matt) Wang" width="620" height="868"
+               onerror="this.remove();document.getElementById('mf').hidden=false;" />
+          <span class="mono-fallback" id="mf" hidden>HW</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="label"><h2>Research</h2></div>
+        <div class="body">
+          <p>I'm broadly interested in <strong>natural language processing</strong>,
+            <strong>multimodal learning</strong>, and <strong>machine learning</strong>. My focus is
+            <span class="hl">faithfulness</span>: a model should be faithful to its own
+            <strong>knowledge and behavior</strong>, doing what it knows and what it says it will
+            do, and stay <span class="hl">grounded</span> in its <strong>sources</strong>, with each claim resting on
+            evidence it can point to. It should also be <span class="hl">verifiable</span>: a person
+            <em>can</em> check all of this, and check it <em>efficiently</em>.
+            I work on this in cited text, over structured
+            data, under temporal shift, and across modalities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2: news ============ -->
+  <section class="page" id="news">
+    <div class="grid reveal">
+      <div class="label"><h2>News</h2></div>
+      <div class="body">
+        <ul class="news">
+          <li><span class="date">Jul 2026</span><span class="what">SciTaRC is accepted at <strong>COLM 2026</strong>.</span></li>
+          <li><span class="date">May 2026</span><span class="what">An earlier version of SciTaRC is accepted at the SURGeLLM Workshop @ ACL 2026.</span></li>
+          <li><span class="date">May 2026</span><span class="what">Awarded the Pistritto Undergraduate Research Fellowship (Computer Science, JHU).</span></li>
+          <li><span class="date">Apr 2026</span><span class="what">New preprint: <a href="https://arxiv.org/abs/2604.01432">Are Finer Citations Always Better?</a></span></li>
+          <li><span class="date">Apr 2026</span><span class="what">Awarded the Naddor Prize (Applied Mathematics &amp; Statistics, JHU).</span></li>
+          <li><span class="date">Mar 2026</span><span class="what">New preprint: <a href="https://arxiv.org/abs/2603.08910">SciTaRC</a>, a plan-annotated scientific tabular QA benchmark.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 3: publications ============ -->
+  <section class="page" id="publications">
+    <div class="grid reveal">
+      <div class="label"><h2>Publications</h2></div>
+      <div class="body">
+        <ol class="pubs">
+          <li class="pub">
+            <div class="pub-meta">
+              <span class="tag venue">COLM 2026</span>
+              <span class="tag">Structured data &middot; Faithful execution</span>
+            </div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2603.08910">SciTaRC: A Plan-Annotated Scientific Tabular QA Benchmark for Language Reasoning and Complex Computation</a></h3>
+            <p class="pub-authors"><strong>Hexuan Wang</strong>, Yaxuan Ren, Srikar Bommireddypalli, Shuxian Chen, Adarsh Prabhudesai, Rongkun Zhou, Elina Baral, Philipp Koehn</p>
+            <p class="pub-tldr"><span class="lbl">TL;DR</span>Frontier models fail scientific table QA not from wrong strategy but from a universal <em>execution bottleneck</em>: unfaithful step-by-step execution of their own correct plans.</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2603.08910">arXiv</a><a href="https://github.com/JHU-CLSP/SciTaRC">Code</a></p>
+          </li>
+          <li class="pub">
+            <div class="pub-meta">
+              <span class="tag venue">Under review, TMLR</span>
+              <span class="tag">Attribution &middot; Faithful generation</span>
+            </div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2604.01432">Are Finer Citations Always Better? Rethinking Granularity for Attributed Generation</a></h3>
+            <p class="pub-authors"><strong>Hexuan Wang</strong>, Jingyu Zhang, Benjamin Van Durme, Daniel Khashabi</p>
+            <p class="pub-tldr"><span class="lbl">TL;DR</span>Forcing sentence-level citations degrades attribution; paragraph-level granularity best balances correctness with human verifiability.</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2604.01432">arXiv</a><a href="https://github.com/JHU-CLSP/citation-granularity">Code</a></p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="awards">
+    <div class="grid reveal">
+      <div class="label"><h2>Awards</h2></div>
+      <div class="body">
+        <ul class="teach">
+          <li><span class="tc-name">Pistritto Undergraduate Research Fellowship <span class="amt">$6,000</span><span class="tc-num">Computer Science, JHU</span></span><span class="tc-terms">2026</span></li>
+          <li><span class="tc-name">Naddor Prize<span class="tc-num">Applied Mathematics &amp; Statistics, JHU</span></span><span class="tc-terms">2026</span></li>
+          <li><span class="tc-name">Dean's List<span class="tc-num">Johns Hopkins University</span></span><span class="tc-terms">Every semester</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="teaching">
+    <div class="grid reveal">
+      <div class="label"><h2>Teaching</h2><p class="kicker">TA/CA at JHU,<br>since 2024.</p></div>
+      <div class="body">
+        <ul class="teach">
+          <li><span class="tc-name">NLP: Self-Supervised Models<span class="tc-num">601.471/671</span></span><span class="tc-terms">Fall 2026</span></li>
+          <li><span class="tc-name">Artificial Intelligence<span class="tc-num">601.664</span></span><span class="tc-terms">Spring 2025 &middot; Fall 2025 &middot; Spring 2026</span></li>
+          <li><span class="tc-name">Numerical Linear Algebra<span class="tc-num">553.480/680</span></span><span class="tc-terms">Fall 2025</span></li>
+          <li><span class="tc-name">Linear Algebra &amp; Data Science<span class="tc-num">553.291/295</span></span><span class="tc-terms">Spring 2024 &middot; Spring 2025 &middot; Fall 2025</span></li>
+          <li><span class="tc-name">Mathematical Foundations for Computer Science<span class="tc-num">601.230</span></span><span class="tc-terms">Fall 2024</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 5: fun fact ============ -->
+  <section class="page" id="beyond">
+    <div class="grid reveal">
+      <div class="label"><h2>Beyond</h2></div>
+      <div class="body">
+        <ul class="beyond">
+          <li><span class="b-key">I sing.</span> I'm a bass in the
+            <a href="https://www.youtube.com/JHUvocalchords">JHU Vocal Chords</a>, our a cappella group,
+            where I used to serve as Business Manager. We placed 3rd at the ICCA Quarterfinals in 2024
+            and 2026. I can reach a low <strong>D2</strong>, and on a good day a C&#9839;2.</li>
+          <li><span class="b-key">Applied math research.</span> Before my current research, I worked in
+            applied mathematics at JHU.
+            <ul class="beyond-sub">
+              <li><a href="https://engineering.jhu.edu/designcenter/2025/05/05/seeing-sound/">Reconstructing
+                the mathematics of FM sound synthesis</a>, with
+                <a href="https://engineering.jhu.edu/faculty/daniel-naiman/">Prof. Daniel Naiman</a>.</li>
+              <li><a href="https://sports-analytics.cs.jhu.edu/baseball-scheduling-optimization/">Sport
+                scheduling optimization</a> with the JHU Sports Analytics group; our schedules were
+                adopted by <strong>Minor League Baseball</strong>.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>Hexuan (Matt) Wang &middot; <a href="mailto:hwang302@jh.edu">hwang302@jh.edu</a> &middot; Baltimore, MD &middot; Updated August 2026</footer>
+
+</main>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  /* co-author links */
+  var LINKS={"Jingyu Zhang":"https://jackz.io/","Benjamin Van Durme":"https://www.cs.jhu.edu/~vandurme/","Daniel Khashabi":"https://danielkhashabi.com/","Philipp Koehn":"https://www.cs.jhu.edu/~phi/","Jaemin Cho":"https://j-min.io/"};
+  document.querySelectorAll('.pub-authors').forEach(function(p){
+    var h=p.innerHTML;
+    Object.keys(LINKS).forEach(function(n){h=h.split(n).join('<a href="'+LINKS[n]+'">'+n+'</a>');});
+    p.innerHTML=h;
+  });
+
+  /* theme toggle */
+  var root=document.documentElement, btn=document.getElementById('theme');
+  btn.setAttribute('aria-pressed',String(root.getAttribute('data-theme')==='dark'));
+  btn.addEventListener('click',function(){
+    var next=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    btn.setAttribute('aria-pressed',String(next==='dark'));
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+
+  /* reveal on enter */
+  var ro=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target);} });
+  },{rootMargin:'0px 0px -10% 0px',threshold:.05});
+  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+
+  /* nav highlight: position-based so the last section always lights up */
+  var pages=[].slice.call(document.querySelectorAll('.page'));
+  var navs=[].slice.call(document.querySelectorAll('.topnav a'));
+  var byId={}; navs.forEach(function(a){byId[a.getAttribute('href').slice(1)]=a;});
+  var navh=parseInt(getComputedStyle(root).getPropertyValue('--navh'))||54;
+  function spy(){
+    var line=navh+90, cur=pages[0];
+    pages.forEach(function(p){ if(p.getBoundingClientRect().top<=line) cur=p; });
+    if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-6) cur=pages[pages.length-1];
+    navs.forEach(function(a){a.classList.remove('current');a.removeAttribute('aria-current');});
+    if(cur&&byId[cur.id]){byId[cur.id].classList.add('current');byId[cur.id].setAttribute('aria-current','true');}
+  }
+  /* back-to-top */
+  var toTop=document.getElementById('toTop');
+  toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  /* news fade only when the list can actually scroll */
+  var news=document.querySelector('.news');
+  function newsFade(){ if(news) news.classList.toggle('is-scrollable',news.scrollHeight>news.clientHeight+2); }
+  function onScroll(){ spy(); toTop.classList.toggle('show',window.scrollY>window.innerHeight*0.8); }
+  var tick=false;
+  window.addEventListener('scroll',function(){ if(!tick){tick=true;requestAnimationFrame(function(){onScroll();tick=false;});} },{passive:true});
+  window.addEventListener('resize',function(){spy();newsFade();});
+  newsFade(); onScroll();
+  /* failsafe: if anything above threw or the observer never fires, reveal everything */
+  setTimeout(function(){document.querySelectorAll('.reveal:not(.in)').forEach(function(el){el.classList.add('in');});},1200);
+})();
+</script>
+</body>
+</html>
