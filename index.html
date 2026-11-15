@@ -83,9 +83,9 @@ a:hover{color:var(--accent);text-decoration-color:var(--accent)}
 .topbar{position:sticky;top:0;z-index:50;background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:saturate(150%) blur(10px);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
 .bar{max-width:var(--wrap);margin:0 auto;height:var(--navh);padding:0 var(--pad);display:flex;align-items:center;gap:1rem}
 .brand{font-weight:600;font-size:19px;text-decoration:none}.brand:hover{color:inherit}
-.topnav{margin-left:auto;display:flex;gap:26px;min-width:0}
-.topnav a{font-size:15px;font-weight:500;color:var(--soft);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;white-space:nowrap}
-.topnav a:hover{color:var(--ink)}.topnav a.current{color:var(--ink);border-bottom-color:var(--accent)}
+.topnav{margin-left:auto;display:flex;gap:6px;min-width:0}
+.topnav a{font-size:15px;font-weight:500;color:var(--soft);text-decoration:none;padding:6px 12px;border-radius:8px;white-space:nowrap;transition:color .15s,background-color .15s}
+.topnav a:hover{color:var(--tint-ink);background-color:var(--tint)}.topnav a.current{color:var(--tint-ink);background-color:var(--tint);font-weight:600}
 .theme-btn{margin-left:18px;width:32px;height:32px;flex:none;border:0;background:transparent;color:var(--soft);cursor:pointer;display:grid;place-items:center;border-radius:8px}
 .theme-btn:hover{color:var(--accent);background:var(--bg-soft)}.theme-btn svg{width:16px;height:16px;display:block}
 :root[data-theme="dark"] .icon-sun{display:none}:root:not([data-theme="dark"]) .icon-moon{display:none}
@@ -213,7 +213,7 @@ footer{margin-top:32px;padding:24px 0 40px;border-top:1px solid var(--line);font
   <li><span>Dean's List<span class="sub">Johns Hopkins University</span></span><span class="terms">Every semester</span></li>
   <li><span>Reviewer<span class="sub">Conference on Neural Information Processing Systems (NeurIPS)</span></span><span class="terms">2026</span></li>
 </ul></section>
-<section class="page" id="teaching"><h2>Teaching</h2><ul class="rows">
+<section class="page" id="teaching"><h2>Teaching Assistant</h2><ul class="rows">
   <li><span>NLP: Self-Supervised Models<span class="sub">601.471/671</span></span><span class="terms">Fall 2026</span></li>
   <li><span>Artificial Intelligence<span class="sub">601.664</span></span><span class="terms">Spring 2025 · Fall 2025 · Spring 2026</span></li>
   <li><span>Numerical Linear Algebra<span class="sub">553.480/680</span></span><span class="terms">Fall 2025</span></li>
